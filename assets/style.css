@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body {
     padding: 0;
     margin: 0;
@@ -19,7 +22,9 @@ ul {
     padding: 0;
     list-style: none;
 }
-
+.container{
+    position:relative;
+}
 sidebar{
     background-color: #f1f1f1;
     text-align: center;
@@ -66,6 +71,9 @@ header {
     padding:20px;
     text-align: center;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+#menu-btn {
+    display: none;
 }
 .nav ul{
     display: flex;
@@ -134,7 +142,7 @@ padding:0 20px;
 .section {
     padding: 0px;
 }
-.skills h1, .experience h1, .projects h1, .education h1 {
+.skills h1, .experience h1, .portfolio h1, .education h1 {
     text-align: center;
     font-size: 2.5em;
     padding: 25px;
@@ -143,13 +151,13 @@ padding:0 20px;
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    grid-template-columns: repeat(4, minmax(170px, 1fr));
     grid-gap: 20px;
     padding: 40px 25px;
     justify-items: center;
 }
 .skill {
-    width:150px;
+    width:170px;
     border-radius: 15px;
 }
 .skill:hover {
@@ -160,12 +168,13 @@ padding:0 20px;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    
 }
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-gap: 10px;
-    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;    
     align-items: center;
     padding: 40px 25px;
 }
@@ -173,6 +182,7 @@ padding:0 20px;
 .logo {
     width: 200px;
     padding:5px;
+    object-fit: cover;
 }
 .logo h3{
     padding:5px;
@@ -181,4 +191,42 @@ padding:0 20px;
 .logo img {
     width: 100%;
     border-radius: 20%;
+}
+@media screen and (max-width: 450px) {
+    .main {
+        margin-left: 0;
+    }
+    sidebar {
+        margin-left:-250px;
+        transition:.3s;
+        z-index: 2;
+        margin-top:72px;
+    }
+    .skills-grid{
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+    }
+    .nav {
+        display:none;
+    }
+    #menu-btn {
+        display: block;
+    }
+    #header {
+        text-align: left;
+    }
+    .show {
+        margin-left:0;
+        transition: .5s;
+    }
+    .right {
+        text-align:right;
+        transition: .5s;
+    }
+
+    header {
+        position:fixed;
+        width:90%;
+    }
+   
 }

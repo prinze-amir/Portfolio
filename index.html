@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir Arnett</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="./assets/images.js" defer></script>
     <script src="./assets/app.js" defer></script>
+
 </head>
 <body>
     <div class="container">
@@ -16,7 +18,7 @@
                 <div class="contact-info">
                     <h2> Amir Arnett</h2>
                     <h3> Senior Web Developer</h3>
-                    <h4><i class="fa-regular fa-envelope"></i> <a href="mailto:amirarnett@yahoo.com">amirarnett@yahoo.com</a></h4>
+                    <a href="mailto:amirarnett@yahoo.com?subject = Opportunity&body = Let's work together!"><h4><i class="fa-regular fa-envelope"></i> amirarnett@yahoo.com</h4></a>
                     <h4><i class="fa-solid fa-phone"></i></i> (248)802-7588</h5>
                 </div>
                 <a href="./assets/AmirArnettResume.pdf" download="AmirArnettResume.pdf" class="resume-btn">Download Resume</a>
@@ -46,6 +48,7 @@
             </div> 
         </sidebar>
         <header id="header">
+            <i onclick="menuClick()" class="fa-solid fa-bars fa-2x" id="menu-btn"></i>
             <nav class="nav">
                 <ul>
                     <li><a href="#header">Home</a></li>
@@ -86,7 +89,7 @@
                     <p> Put work Experience Here </p>  
                 </div>    
             </section>
-            <section id="porfolio" class="portfolio">
+            <section id="portfolio" class="portfolio">
                 <div class="section">
                     <h1>Projects</h1>
                    <div class="portfolio-grid" id="portfolio-grid">    
