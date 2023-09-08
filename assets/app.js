@@ -1,115 +1,32 @@
-// let logos = [
-//     {
-//         name: 'Digyt',
-//         src: 'assets/images/logos/digyt.png',
-//     }, 
-//     {
-//         name: 'Koopo Online',
-//         src: 'assets/images/logos/koopo.png',
-//     }, 
-//     {
-//         name: 'Latham Law',
-//         src: 'assets/images/logos/lathamlaw.png',
-//     }, 
-//     {
-//         name: 'Plu2o',
-//         src: 'assets/images/logos/plu2o.png',
-//     }, 
-//     {
-//         name: 'Paid In My City',
-//         src: 'assets/images/logos/paidinmycity.png',
-//     }, 
 
-// ]
-// let skills = [
-//     {
-//         name: 'HTML/CSS',
-//         src: 'assets/images/skills/html-css.png',
-//     },
-//     {
-//         name: 'UI/UX',
-//         src: 'assets/images/skills/ui-and-ux.jpg',
-//     }, 
-//     {
-//         name: 'JavaScript',
-//         src: 'assets/images/skills/js-logo.png',
-//     },
-//     {
-//         name: 'React',
-//         src: 'assets/images/skills/react.svg',
-//     },
-    
-//     {
-//         name: 'Angular',
-//         src: 'assets/images/skills/angular.svg',
-//     }, 
-//     {
-//         name: 'Vue',
-//         src: 'assets/images/skills/vue.svg',
-//     },
-//     {
-//         name: 'jQuery',
-//         src: 'assets/images/skills/jquery.svg',
-//     },
-//     {
-//         name:'Redux',
-//         src: 'assets/images/skills/redux.png',
-//     },
-//     {
-//         name: 'Node.js',   
-//         src: 'assets/images/skills/node.svg',
-//     }, 
-    
-//     {
-//         name: 'C#',
-//         src: 'assets/images/skills/csharp.svg',
-//     },
-//     {
-//         name:'PHP',
-//         src: 'assets/images/skills/php.svg',
-//     }, 
-//     {
-//         name:'Laravel',
-//         src: 'assets/images/skills/laravel.webp',
+const showJob = (job) => {
 
-//     },
-//     {
-//         name:'MySQL',
-//         src: 'assets/images/skills/mysql.svg',
-//     }, 
-//     {
-//         name:'WordPress',
-//         src: 'assets/images/skills/wordpress.svg',
-//     }, 
-//     {
-//         name: 'Docker',
-//         src: 'assets/images/skills/docker.png',
-//     },
-//     {
-//         name:'Git',
-//         src: 'assets/images/skills/git.svg',
-//     },
-//     {
-//         name: 'apache',
-//         src: 'assets/images/skills/apache.png',
-//     },   
-//     {
-//         name:'Linux',
-//         src: 'assets/images/skills/linux.jpeg',
-//     },
-//     {
-//         name:'AWS',
-//         src: 'assets/images/skills/aws.svg',
-//     },
-//     {
-//         name: 'Azure',
-//         src: 'assets/images/skills/azure.svg',
-//     },
-    
-    
-// ]
-// let projects = []
-//import {skills, logos, projects} from './images.js'
+let jobContainer = document.getElementById('job-info')
+jobContainer.classList.remove('opcaity')
+
+setTimeout(() => {
+    jobContainer.innerHTML = ''
+    let jobDiv = document.createElement('div')
+    let jobImage = document.createElement('img')
+    let company = document.createElement('h3')
+    let role = document.createElement('h4')
+    let jobDescription = document.createElement('p')
+    jobImage.src = job.src
+    company.textContent = job.name
+    role.textContent = job.role
+    jobDescription.textContent = job.description
+    jobContainer.classList.add('shadow')
+    jobContainer.classList.add('opcaity')
+    jobDiv.classList.add('job')
+    jobContainer.appendChild(jobDiv)
+    jobDiv.appendChild(jobImage)  
+    jobDiv.appendChild(company)
+    jobDiv.appendChild(role)
+    jobDiv.appendChild(jobDescription) 
+}, 500);
+
+
+}
 
 const addSkills = () => {
     let skillsContainer = document.getElementById('skills-grid')
@@ -140,11 +57,45 @@ const addLogos = () => {
         logoDiv.classList.add('logo')
         logosContainer.appendChild(logoDiv)
         logoDiv.appendChild(logoImage)
+        logoDiv.onclick = function(){   
+            showJob(logo.info)
+            document.location.href = '#top-job'
+        }
+    })
+}
+const addProjects = () => {
+    let projectsContainer = document.getElementById('portfolio-grid')
+    projects.forEach(project => {
+        let projectDiv = document.createElement('div')
+        let projectLink = document.createElement('a')
+        let projectImage = document.createElement('img')
+        let projectText = document.createElement('h3')
+
+        if (project.url) {
+            projectLink.href = project.url
+            projectLink.target = '_blank'
+            projectImage.src = project.src
+            projectImage.alt = project.name
+            projectText.textContent = project.name
+            projectDiv.classList.add('project')
+            projectsContainer.appendChild(projectDiv)
+            projectDiv.appendChild(projectLink)
+            projectLink.appendChild(projectImage)
+        } else {
+            projectImage.src = project.src
+            projectImage.alt = project.name
+            projectText.textContent = project.name
+            projectDiv.classList.add('project')
+            projectsContainer.appendChild(projectDiv)
+            projectDiv.appendChild(projectImage)
+        }
+        
        // logoDiv.appendChild(logoText)
     })
 }
 addSkills();
 addLogos()
+addProjects()
 
 const menuClick = () => {
     document.getElementById('menu-btn').onclick = function(){
