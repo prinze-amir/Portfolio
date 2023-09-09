@@ -16,7 +16,7 @@ const latham = {
 const koopo = {
     name: 'Koopo Online',
     role: 'Full Stack Developer',
-    src: './assets/images/screenshots/Business page.png',
+    src: './assets/images/screenshots/Business-Page.png',
     description: "Web Application Design and development. (E-commerce, blogs, social, events, CRM, email marketing)     Front End Developer: HTML, CSS, JavaScript (JQuery, React).   Back-End Developer: PHP, MySQL, Javascript , Rest API).     CMS Administrator(WordPress)    WordPress Developer: Custom Theme and Plugin development. Maintain and update code base.    Mobile App Developer (React Native) Express",
 }
 
@@ -161,7 +161,7 @@ let projects = [
     },
     {
         name: 'Koopo Online App',
-        src: 'assets/images/screenshots/Business Page.png',
+        src: 'assets/images/screenshots/Business-Page.png',
     }, 
     
     // {

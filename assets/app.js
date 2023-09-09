@@ -101,6 +101,25 @@ const menuClick = () => {
     document.getElementById('menu-btn').onclick = function(){
         const sidebar = document.getElementById('sidebar')
         const menu = document.getElementById('menu-btn')
+        const overlay = document.getElementById('overlay')
+        if (menu.classList.contains("fa-bars")) {
+            menu.classList.remove("fa-bars");
+            menu.classList.add("fa-times");
+        } else {
+            menu.classList.remove("fa-times");
+            menu.classList.add("fa-bars");
+        }
+        sidebar.classList.toggle('show')
+        overlay.classList.toggle('overlay')
+        menu.classList.toggle('right')
+
+    }
+}
+
+const overlayClick = () => {
+    document.getElementById('overlay').onclick = function(){
+        const sidebar = document.getElementById('sidebar')
+        const menu = document.getElementById('menu-btn')
 
         if (menu.classList.contains("fa-bars")) {
             menu.classList.remove("fa-bars");
@@ -111,6 +130,8 @@ const menuClick = () => {
         }
         sidebar.classList.toggle('show')
         menu.classList.toggle('right')
+        overlay.classList.toggle('overlay')
+
 
     }
 }
