@@ -215,6 +215,10 @@ header {
     object-position: center;
     
 }
+.experience .section {
+    display:flex;
+    flex-flow:column;
+}
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -241,6 +245,40 @@ header {
     width: 100%;
     border-radius: 20%;
 }
+
+.job-info {
+    padding: 25px 0;
+    border-radius: 15px;
+    font-size:1.2em;
+    text-align: center;
+    margin:25px 20px;
+    max-width:800px;
+    transition: .5s;
+    line-height: 1.7em;
+    opacity:0;
+    align-self:center;
+}
+
+.opcaity{
+    opacity:1;
+}
+.job-info h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.shadow {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+.job p{
+    margin:auto;
+    padding:20px 30px;
+}
+.job-info img {
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+}
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -265,43 +303,6 @@ header {
     width:100%;
 }
 
-.job-info {
-    display:flex;
-    flex-flow:column;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    border-radius: 15px;
-    font-size:1.2em;
-    text-align: center;
-    margin:25px auto 40px auto;
-    width:70%;
-    transition: .5s;
-    line-height: 1.7em;
-    opacity:0;
-}
-
-.opcaity{
-    opacity:1;
-}
-.job-info h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-.shadow {
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-}
-.job p{
-    width:80%;
-    margin:auto;
-    padding:5px;
-}
-.job-info img {
-    width: 70%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 18px;
-}
 @media screen and (max-width: 650px) {
     .main {
         margin-left: 0;
