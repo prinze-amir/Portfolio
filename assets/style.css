@@ -146,12 +146,12 @@ header {
     padding:20px;
     font-size:1.8em;
     text-align: center;
+    width:100%;
 }
 #about img {
-    width: 500px;
+    width: 100%;
     object-fit: contain;
     object-position: center;
-    border-radius: 18px;
     box-shadow: 1px 3px 13px 0px rgb(198 0 0);
 }
 #about .section {
@@ -162,7 +162,7 @@ header {
     color: #fff;
     justify-content: center;
     align-items: center;
-   background-color:#0000006c
+   background-color:#0000006c;
 }
 
 .header-img {
