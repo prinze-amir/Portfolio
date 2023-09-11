@@ -2,7 +2,7 @@ const paid = {
     name: 'Pain In My Ciy',
     role: 'Front End Developer',
     src: './assets/images/screenshots/paid.png',
-    description: 'A website for a local businesses to promote their products and services. The site is built with HTML, CSS, and JavaScript. It is hosted on Netlify and uses Netlify Forms to handle the contact form.',
+    description: 'A website for a local business directory to promote business products and services. Features included intergrated bookings and events.  The site is built with HTML, CSS, and JavaScript. It is hosted on Netlify and uses Netlify Forms to handle the contact form.',
 }
 
 const latham = {

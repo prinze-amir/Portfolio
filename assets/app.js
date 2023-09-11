@@ -1,32 +1,32 @@
 
 const showJob = (job) => {
 
-let jobContainer = document.getElementById('job-info')
-jobContainer.classList.remove('opcaity')
+    let jobContainer = document.getElementById('job-info')
+    jobContainer.classList.remove('opcaity')
 
-setTimeout(() => {
-    jobContainer.innerHTML = ''
-    let jobDiv = document.createElement('div')
-    let jobImage = document.createElement('img')
-    let company = document.createElement('h3')
-    let role = document.createElement('h4')
-    let jobDescription = document.createElement('p')
-    jobImage.src = job.src
-    company.textContent = job.name
-    role.textContent = job.role
-    jobDescription.textContent = job.description
-    jobContainer.classList.add('shadow')
-    jobContainer.classList.add('opcaity')
-    jobDiv.classList.add('job')
-    jobContainer.appendChild(jobDiv)
-    jobDiv.appendChild(jobImage)  
-    jobDiv.appendChild(company)
-    jobDiv.appendChild(role)
-    jobDiv.appendChild(jobDescription) 
-}, 500);
-
-
+    setTimeout(() => {
+        jobContainer.innerHTML = ''
+        let jobDiv = document.createElement('div')
+        let jobImage = document.createElement('img')
+        let company = document.createElement('h3')
+        let role = document.createElement('h4')
+        let jobDescription = document.createElement('p')
+        jobImage.src = job.src
+        company.textContent = job.name
+        role.textContent = job.role
+        jobDescription.textContent = job.description
+        jobContainer.classList.add('shadow')
+        jobContainer.classList.add('opcaity')
+        jobDiv.classList.add('job')
+        jobContainer.appendChild(jobDiv)
+        jobDiv.appendChild(jobImage)  
+        jobDiv.appendChild(company)
+        jobDiv.appendChild(role)
+        jobDiv.appendChild(jobDescription) 
+    }, 500);
 }
+
+showJob(digyt);
 
 const addSkills = () => {
     let skillsContainer = document.getElementById('skills-grid')

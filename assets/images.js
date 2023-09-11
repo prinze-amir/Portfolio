@@ -2,7 +2,7 @@ const paid = {
     name: 'Pain In My Ciy',
     role: 'Front End Developer',
     src: './assets/images/screenshots/paidinmycity.png',
-    description: 'A website for a local businesses to promote their products and services. The site is built with HTML, CSS, and JavaScript. It is hosted on Netlify and uses Netlify Forms to handle the contact form.',
+    description: 'A website for a local business directory to promote business products and services. Features included intergrated bookings and events.  The site is built with WordPress, PHP, HTML, CSS, and JavaScript.',
 }
 
 const latham = {
@@ -17,7 +17,7 @@ const koopo = {
     name: 'Koopo Online',
     role: 'Full Stack Developer',
     src: './assets/images/screenshots/Business-Page.png',
-    description: "Web Application Design and development. (E-commerce, blogs, social, events, CRM, email marketing)     Front End Developer: HTML, CSS, JavaScript (JQuery, React).   Back-End Developer: PHP, MySQL, Javascript , Rest API).     CMS Administrator(WordPress)    WordPress Developer: Custom Theme and Plugin development. Maintain and update code base.    Mobile App Developer (React Native) Express",
+    description: "Web Application Design and development. (Multi seller E-commerce marketplace, blogs, social, events, CRM, email marketing)     Front End Developer: HTML, CSS, JavaScript (JQuery, React).   Back-End Developer: PHP, MySQL, Javascript , Rest API).     CMS Administrator(WordPress)    WordPress Developer: Custom Theme and Plugin development. Maintain and update code base.    Mobile App Developer (React Native) Express",
 }
 
 const digyt = {
