@@ -140,7 +140,6 @@ header {
     background-position:center;
     background-size: cover;
     background-attachment: fixed;
-    
 }
 #about .info {
     padding:20px;
@@ -314,13 +313,11 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 
     }
-    /* .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
-        grid-gap: 20px;
-        justify-items: center;    
-        align-items: center;
-        padding:25px;
-    }  */
+    #about{
+        background-image: url('./images/code2.jpg');
+        background-position:center;
+        background-size: cover;
+    }
     .project {
         max-height:350px;
         min-height:150px;
