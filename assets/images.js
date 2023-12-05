@@ -1,5 +1,5 @@
 const paid = {
-    name: 'Pain In My Ciy',
+    name: 'Paid In My City',
     role: 'Front End Developer',
     src: './assets/images/screenshots/paidinmycity.png',
     description: 'A website for a local business directory to promote business products and services. Features included intergrated bookings and events.  The site is built with WordPress, PHP, HTML, CSS, and JavaScript.',

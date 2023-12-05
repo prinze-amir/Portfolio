@@ -59,7 +59,7 @@ const addLogos = () => {
         logoDiv.appendChild(logoImage)
         logoDiv.onclick = function(){   
             showJob(logo.info)
-            document.location.href = '#top-job'
+            document.location.href = '#experience-grid'
         }
     })
 }
