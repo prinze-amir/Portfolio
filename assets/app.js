@@ -44,8 +44,8 @@ const addSkills = () => {
        // skillDiv.appendChild(skillText)
     })
 }
-const addLogos = () => {
-    let logosContainer = document.getElementById('experience-grid')
+const addLogos = (container) => {
+    let logosContainer = document.getElementById(container)
     logos.forEach(logo => {
         let logoDiv = document.createElement('div')
         let logoImage = document.createElement('img')
@@ -59,7 +59,12 @@ const addLogos = () => {
         logoDiv.appendChild(logoImage)
         logoDiv.onclick = function(){   
             showJob(logo.info)
-            document.location.href = '#experience-grid'
+            if (window.matchMedia("(max-width: 768px)").matches) {
+
+                document.location.href = '#top-job'
+            } else {
+                document.location.href = '#experience-grid'
+            }
         }
     })
 }
@@ -94,7 +99,8 @@ const addProjects = () => {
     })
 }
 addSkills();
-addLogos()
+addLogos('experience-grid')
+addLogos('top-job2')
 addProjects()
 
 const menuClick = () => {
