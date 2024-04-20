@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Amir Arnett</title>
+    <meta property=’og:title’ content='Amir Arnett'/>
+    <!-- <meta property=’og:image’ content='https://YOUR_THUMBNAIL_IMAGE_URL’/> -->
+    <meta property=’og:description’ content='Portfolio Site'/>
+    <meta property=’og:url’ content='https://prinze-amir-portfolio.netlify.app/'/>
+    <!-- <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' /> -->
+
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>   
     <script src="./assets/data.js" defer></script>
     <script src="./assets/app.js" defer></script>
 
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
         <sidebar id="sidebar">
             <div class="sidebar-container">
                 <img class="profile-img" src="./assets/images/profile.jpeg" alt="Amir Arnett" width="150">
@@ -65,14 +74,14 @@
             <div onclick="overlayClick()" id="overlay"></div>
             <section id="top" class="top">
                 <div class="section">
-                    <h1>THERE'S WORK TO BE DONE!</h1>
+                    <h1 class="text-5xl">THERE'S WORK TO BE DONE!</h1>
                     <p> So why not work together? </p>  
                 </div>    
             </section>
             <section id="about" class="">
                 <div class="section">
-                    <div class="info"><h3>About Me</h3>
-                    <p> I am a Ful Stack Developer with 8 years of experience. I have a passion for learning and sharing my knowledge with others. I develop web applications by day and build websites by night. </p>  
+                    <div class="info flex flex-col items-center center gap-3"><h3 class="text-5xl uppercase ">About Me</h3>
+                    <p class=""> I am a Ful Stack Developer with 8 years of experience. I have a passion for learning and sharing my knowledge with others. I develop web applications by day and build websites by night. </p>  
                     <img class="about-img" src="./assets/images/keyboard-2360px.png" alt="Amir Arnett" width="150">
 
                 </div>
@@ -90,7 +99,7 @@
             <section id="experience" class="experience">
                 <div class="section">
                     <h1>Experience</h1> 
-                    <h2>Check out some of the companies I've worked for!</h2>
+                    <h2 class="p-4 m-5 text-center text-2xl capitalize ">here are some of my Projects</h2>
                     <div class="experience-grid" id="experience-grid">
                     <!--  js function auto add info> -->
                     </div>

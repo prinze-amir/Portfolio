@@ -1,8 +1,9 @@
 const paid = {
     name: 'Paid In My City',
     role: 'Front End Developer',
+    tech: 'HTML, CSS, jQuery, Wordpress, PHP, Docker, Azure, Github',
     src: './assets/images/screenshots/paidinmycity.png',
-    description: 'A website for a local business directory to promote business products and services. Features included intergrated bookings and events.  The site is built with WordPress, PHP, HTML, CSS, and JavaScript.',
+    description: 'Design and develop website for a local business directory to promote business products and services. Features included intergrated bookings and events.  The site is built with WordPress, PHP, HTML, CSS, and JavaScript.',
 }
 
 const latham = {
@@ -10,21 +11,23 @@ const latham = {
     role: 'Full Stack Developer',
     tech: 'HTML, CSS, jQuery, Wordpress, PHP, Docker, Azure, Github',
     src: './assets/images/screenshots/lathamlaw-screen.png',
-    description: 'A website for a personal injury law firm specilizing in motor vehicle accidents. The site is built with WordPress CMS and Docker. Custom theme and plugins for custom features. Front end designed and built with Elementor.  Hosted on Azure Cloud Services.',
+    description: 'Design and develop website for a personal injury law firm specilizing in motor vehicle accidents. The site is built with WordPress CMS and Docker. Custom theme and plugins for custom features. Front end designed and built with Elementor.  Hosted on Azure Cloud Services.',
 }
 
 const koopo = {
     name: 'Koopo Online',
     role: 'Full Stack Developer',
+    tech: 'Wordpress, PHP, MySQL, React, ReactNative',
     src: './assets/images/screenshots/Business-Page.png',
     description: "Web Application Design and development. (Multi Seller Social E-commerce Marketplace. Built features for blogs, activity feeds, events/booking, CRM, email marketing)     Front End Developer: HTML, CSS, JavaScript (JQuery, React).   Back-End Developer: PHP, MySQL, Javascript , Rest API).     CMS Administrator(WordPress)    WordPress Developer: Custom Theme and Plugin development. Maintain and update code base.    Mobile App Developer (React Native and Express)",
 }
 
 const digyt = {
     name: 'Digyt',
-    role: 'Front End Developer',
+    role: 'Full Stack Developer',
+    tech: 'React, ReactNative, NextJs, Express, Angular, VueJs',
     src: './assets/images/screenshots/digyt.png',
-    description: "Build and design front end web applications and microservices using popluar JavaScript Frameworks (ReactJs, AngularJs, VueJs, NextJs). Built SEO Web Analyzer Tool using React, and Nodejs and Express.",
+    description: "Build and design full stack web applications and microservices using popluar JavaScript Frameworks (ReactJs, AngularJs, VueJs, NextJs).",
 }
 
 const plu2o = {
@@ -32,6 +35,20 @@ const plu2o = {
     role: 'Front End Developer',
     src: './assets/images/screenshots/plu2o.png',
     description: 'A website for a local business. The site is built with HTML, CSS, and JavaScript. It is hosted on Netlify and uses Netlify Forms to handle the contact form.',
+}
+const a4eoe = {
+    name: 'Alliance for Excellence in Online Education',
+    role: 'Web Designer/Developer',
+    tech: 'Wordpress, PHP, HTML, CSS, JavaScript, Elementor, Docker',
+    src: './assets/images/screenshots/a4eoe-screenshot.png',
+    description: 'Complete website redesign.  The site is built with WordPress, PHP, HTML, CSS, and JavaScript. It is self-hosted and uses Elementor for the front end design.',
+}
+const ewh = {
+    name: 'Earine & William Harvey Scholarship Fund',
+    role: 'Full Stack Developer',
+    tech: 'React, NextJs, MongoDB, Google Cloud',
+    src: './assets/images/screenshots/ewh-recipient.png',
+    description: 'Design and develop full stack web application for scholarship fund.  Enable applicants to submit application storing applicants in a database where admin can manage/approve applicants, built in analytics, integrated with Google Drive and Mongo for free storage.',
 }
 
 let logos = [
@@ -49,6 +66,16 @@ let logos = [
         name: 'Latham Law',
         src: 'assets/images/logos/lathamlaw.png',
         info: latham,
+    }, 
+    {
+        name: 'Alliance for Excellence in Online Education',
+        src: 'assets/images/logos/a4eoe.png',
+        info: a4eoe,
+    }, 
+    {
+        name: 'Earline & William Harvey Scholarship Fund',
+        src: 'assets/images/logos/ewh-logo.png',
+        info: ewh,
     }, 
     // {
     //     name: 'Plu2o',
@@ -78,6 +105,10 @@ let skills = [
     {
         name: 'React',
         src: 'assets/images/skills/react.svg',
+    },
+    {
+        name: 'NextJs',
+        src: 'assets/images/skills/next.svg',
     },
     
     {
@@ -117,7 +148,12 @@ let skills = [
     {
         name:'MySQL',
         src: 'assets/images/skills/mysql.svg',
-    }, 
+    },
+    {
+        name:'MongoDB',
+        src: 'assets/images/skills/MongoDB.svg',
+    },
+
     {
         name:'WordPress',
         src: 'assets/images/skills/wordpress.svg',
@@ -157,8 +193,18 @@ let projects = [
     },
     {   
         name: 'Latham Law Firm',
-        src: 'assets/images/screenshots/lathamlaw-screen.png',
+        src: 'assets/images/screenshots/lathamlaw-screenshot-full.png',
         url: 'https://lathamlawgroup.com/',    
+    },
+    {   
+        name: 'Alliance for Exellence In Online Education',
+        src: 'assets/images/screenshots/a4eoe-screenshot.png',
+        url: 'https://a4eoe.org/',    
+    },
+    {   
+        name: 'EWH Scholarship Fund',
+        src: 'assets/images/screenshots/ewh-screenshot-full.png',
+        url: 'https://ewh-scholarship.vercel.app/',    
     },
     {
         name: 'Koopo Online App',

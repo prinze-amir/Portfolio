@@ -10,10 +10,12 @@ const showJob = (job) => {
         let jobImage = document.createElement('img')
         let company = document.createElement('h3')
         let role = document.createElement('h4')
+        let tech = document.createElement('h4')
         let jobDescription = document.createElement('p')
         jobImage.src = job.src
         company.textContent = job.name
         role.textContent = job.role
+        tech.textContent = job.tech
         jobDescription.textContent = job.description
         jobContainer.classList.add('shadow')
         jobContainer.classList.add('opcaity')
@@ -22,6 +24,7 @@ const showJob = (job) => {
         jobDiv.appendChild(jobImage)  
         jobDiv.appendChild(company)
         jobDiv.appendChild(role)
+        jobDiv.appendChild(tech)
         jobDiv.appendChild(jobDescription) 
     }, 500);
 }
