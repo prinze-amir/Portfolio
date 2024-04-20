@@ -135,13 +135,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
 }
-#about .info {
-    padding:20px;
-    font-size:1.8em;
-    text-align: center;
-    width:100%;
-    max-width:700px;
-}
+
 #about img {
     max-width: 650px;
     object-fit: contain;
@@ -159,9 +153,9 @@ header {
     align-items: center;
    background-color:#0000006c;
 }
-#top-job2{
+/* #top-job2{
     display:none
-}
+} */
 
 .header-img {
     width: 50px;
@@ -248,7 +242,6 @@ header {
 .job-info {
     padding: 25px 0;
     border-radius: 15px;
-    font-size:1.2em;
     text-align: center;
     margin:25px 20px;
     max-width:800px;
@@ -262,8 +255,11 @@ header {
     opacity:1;
 }
 .job-info h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 1.3em;
+    margin: 10px 0;;
+}
+.job-info h4 {
+    font-style:italic;
 }
 .shadow {
     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
@@ -277,6 +273,7 @@ header {
     object-fit: cover;
     object-position: center;
     border-radius: 18px;
+    margin:auto;
 }
 .portfolio-grid {
     display: grid;
@@ -301,9 +298,9 @@ header {
 .project img{
     width:100%;
 }
-#top-job2{
+/* #top-job2{
     visibility: hidden;
-}
+} */
 
 @media screen and (max-width: 650px) {
     .main {
@@ -341,7 +338,6 @@ header {
         height:100px;
     }
     #top-job2 {
-        display:flex;
         visibility: visible;
         margin-bottom: 25px;
     }
